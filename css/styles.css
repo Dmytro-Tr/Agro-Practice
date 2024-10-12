@@ -1,0 +1,397 @@
+/* Скидання відступів, полів і рамок */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Плавне прокручування */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Забезпечення правильного відображення шрифтів */
+body {
+  font-family: "Days One", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #7a7171;
+  font-style: normal;
+  line-height: 1.5;
+  background-color: #fff;
+}
+
+/* Забезпечення однакового відображення зображень */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Забезпечення однакового відображення списків */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Забезпечення однакового відображення заголовків */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: inherit;
+}
+
+/* Вирівнювання полів форми */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+/* Забезпечення коректного відображення блоків, що мають поведінку inline-block */
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Скидання обробки кнопок */
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+/* ----- header ----- */
+
+.header {
+  padding: 9px 0 10px 0;
+}
+
+.header-container {
+  min-width: 320px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.header-nav-link-logo {
+  width: 122px;
+  height: 42px;
+}
+
+.header-nav-list {
+  display: none;
+}
+
+.header-social {
+  display: none;
+}
+
+.header-button-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+
+  .header {
+    padding: 19px 0 24px 0;
+  }
+
+  .header-container {
+    min-width: 768px;
+    justify-content: flex-end;
+    padding: 0 40px;
+  }
+
+  .header-social {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .header-social-list {
+    display: flex;
+    gap: 15px;
+  }
+
+  .header-button-mobile {
+    margin-left: 78px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .header {
+    padding: 24px 0 30px 0;
+  }
+
+  .header-container {
+    min-width: 1440px;
+    padding: 0 70px;
+    justify-content: space-between;
+  }
+
+  .header-button-mobile {
+    display: none;
+  }
+
+  .header-nav-list {
+    display: flex;
+    gap: 46px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #7a7171;
+  }
+
+  .header-nav-link-logo {
+    margin-right: 363px;
+  }
+
+  .header-nav-link-home {
+    color: #36a74c;
+  }
+
+  .header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-social {
+    margin: 0;
+  }
+}
+
+/* ----- offer -----*/
+
+.offer {
+  padding: 15px 0 17px 0;
+}
+
+.offer-container {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.offer-title {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.offer-title-span {
+  color: #36a74c;
+}
+
+.offer-text {
+  font-size: 18px;
+  text-align: center;
+  max-width: 280px;
+}
+
+@media screen and (min-width: 768px) {
+  .offer {
+    padding: 25px 0 17px 0;
+  }
+
+  .offer-container {
+    min-width: 768px;
+  }
+
+  .offer-title {
+    font-size: 48px;
+  }
+
+  .offer-text {
+    font-size: 16px;
+    max-width: 480px;
+    line-height: 250%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+
+  .offer {
+    padding: 30px 0 24px 0;
+  }
+
+  .offer-container {
+    min-width: 1440px;
+  }
+
+  .offer-title {
+    font-size: 64px;
+  }
+
+  .offer-text {
+    font-size: 18px;
+    max-width: 524px;
+  }
+}
+
+/* ----- photo -----*/
+
+.photo {
+  padding: 17px 0;
+}
+
+.photo-container {
+  padding: 0 20px;
+
+  width: 278px;
+  height: 142px;
+  background-color: bisque;
+}
+
+@media screen and (min-width: 768px) {
+  .photo {
+    padding: 17px 0 22px 0;
+  }
+
+  .photo-container {
+    padding: 0 40px;
+
+    width: 685px;
+    height: 162px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .photo {
+    padding: 24px 0 24px 0;
+  }
+
+  .photo-container {
+    padding: 0 70px;
+
+    width: 1301px;
+    height: 282px;
+  }
+}
+
+/* ----- onlineapp ----- */
+
+.onlineapp {
+  padding: 17px 20px 25px 20px;
+}
+
+.onlineapp-container {
+  max-width: 280px;
+  padding: 40px 18px;
+  border-radius: 30px;
+  background-color: #36a74c;
+  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.25);
+}
+
+.onlineapp-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.onlineapp-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.onlineapp-form-label {
+  border-radius: 100px;
+  background-color: #fff;
+  width: 245px;
+  /* height: 50px; */
+  display: block;
+  padding: 13px 0;
+  margin-bottom: 25px;
+}
+
+.onlineapp-form-input {
+  width: 245px;
+  /* height: 50px; */
+  font-size: 14px;
+  /* text-transform: uppercase; */
+  text-align: center;
+  color: #7a7171;
+}
+
+.onlineapp-form-input::placeholder {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #c9c9c9;
+}
+
+.onlineapp-form-button {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #36a74c;
+  border-radius: 100px;
+  background-color: #fff;
+  width: 245px;
+  padding: 14.5px 45px;
+}
+
+@media screen and (min-width: 768px) {
+  .onlineapp {
+    padding: 25px 40px 40px 40px;
+  }
+
+  .onlineapp-container {
+    max-width: 688px;
+    padding: 50px 107px;
+  }
+
+  .onlineapp-title {
+    font-size: 24px;
+  }
+
+  .onlineapp-form-label {
+    margin-bottom: 32px;
+    padding: 21.5px 0;
+    width: 474px;
+  }
+
+  .onlineapp-form-input::placeholder {
+    font-size: 18px;
+  }
+
+  .onlineapp-form-input {
+    width: 474px;
+    font-size: 18px;
+  }
+
+  .onlineapp-form-button {
+    font-size: 18px;
+    padding: 21.5px 0;
+    width: 474px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .onlineapp-container {
+    max-width: 856px;
+  }
+}
