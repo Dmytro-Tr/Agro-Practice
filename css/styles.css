@@ -611,8 +611,6 @@ button {
     margin-bottom: 50px;
   }
 
-  .ourteam-title-span {}
-
   .ourteam-text {
     font-size: 18px;
     margin-bottom: 0;
@@ -628,33 +626,93 @@ button {
   }
 }
 
-/* -----  ----- */
+/* ----- footer ----- */
+
 .footer {
   background-color: #36a74c;
   ;
 }
 
-.footer-container {}
+.footer-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
 
-.footer-first-box {}
+.footer-first-box {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  order: 1;
+}
 
-.footer-form {}
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  background-color: #fff;
+  width: 280px;
+  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.25);
+}
 
-.footer-form-title {}
+.footer-form-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #00ab21;
+  padding: 40px 41px 0 41px;
+  margin-bottom: 25px;
 
-.footer-form-input {}
+}
 
-.footer-form-button {}
+.footer-form-input {
+  font-size: 14px;
+  text-align: center;
+  color: #36a74c;
+  padding: 14px 0 14px 0;
+  border-radius: 100px;
+  border: 1px solid #36a74c;
+  margin-bottom: 25px;
+  width: 245px;
+}
 
-.footer-second-box {}
+.footer-form-input::placeholder {
+  color: #c9c9c9;
+  text-transform: uppercase;
+}
+
+.footer-form-button {
+  border-radius: 100px;
+  background-color: #36a74c;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  padding: 15px 0;
+  width: 245px;
+  margin-bottom: 40px
+}
+
+.footer-second-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0 30px 0;
+  order: 0;
+}
 
 .footer-title {
   font-size: 18px;
   text-align: center;
   color: #fff;
+  width: 244px;
+  margin-bottom: 15px;
 }
-
-.footer-social {}
 
 .footer-social-list {
   display: flex;
@@ -663,11 +721,9 @@ button {
   gap: 19px;
 }
 
-.footer-social-item {}
-
 .footer-social-link {
-  width: 56.38px;
-  height: 56.38px;
+  width: 55px;
+  height: 55px;
   border-radius: 100%;
   background-color: #fff;
   display: flex;
@@ -689,7 +745,7 @@ button {
 
 .footer-social-svg-f {
   fill: #36a74c;
-  width: 60%;
+  width: 55%;
 }
 
 .footer-social-svg-inst {
@@ -705,11 +761,126 @@ button {
 
 .footer-social-svg-use-f {
   box-shadow: none;
+}
 
-
+.footer-bgtext-box {
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  width: 205px;
 }
 
 .footer-bgtext {
   font-size: 36px;
   color: rgba(255, 255, 255, 0.1);
+  line-height: initial;
+}
+
+@media screen and (min-width:768px) {
+  .footer-title {
+    font-size: 28px;
+    width: 333px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  .footer-second-box {
+    padding: 0;
+  }
+
+  .footer-form {
+    width: 334px;
+    ;
+  }
+
+  .footer-form-input {
+    width: 267px;
+    font-size: 18px;
+    padding: 21px 0 21px 0;
+  }
+
+  .footer-form-button {
+    font-size: 18px;
+    width: 267px;
+    padding: 22px 0 22px 0;
+  }
+
+  .footer-form-title {
+    font-size: 18px;
+  }
+
+  .footer-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 60px 40px;
+  }
+
+  .footer-first-box {
+    order: 0;
+    padding: 0 22px 0 0;
+  }
+
+  .footer-bgtext-box {
+    top: auto;
+    left: auto;
+    width: 369px;
+    right: 40px;
+    bottom: 110px;
+  }
+
+  .footer-bgtext {
+    font-size: 72px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+
+  .footer-container {
+    padding: 104px 69px;
+  }
+
+  .footer-first-box {
+    padding: 0 149px 0 0;
+  }
+
+  .footer-form {
+    width: 524px;
+  }
+
+  .footer-form-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .footer-form-input {
+    width: 350px;
+    margin-bottom: 32px;
+  }
+
+  .footer-form-button {
+    width: 350px;
+    margin-bottom: 50px;
+  }
+
+  .footer-title {
+    font-size: 36px;
+    width: 591px;
+    margin-bottom: 48px;
+  }
+
+  .footer-second-box {
+    align-items: flex-start;
+  }
+
+  .footer-bgtext {
+    font-size: 144px;
+    line-height: 110%;
+  }
+
+  .footer-bgtext-box {
+    width: 775px;
+    right: 89px;
+    bottom: 56px;
+  }
 }
