@@ -128,7 +128,54 @@ button {
 
   .header-social-list {
     display: flex;
-    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+  }
+
+  .header-social-svg-use {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
+    fill: #36a74c;
+  }
+
+  .header-social-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #36A74C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms ease-in-out, box-shadow 250ms ease-in-out;
+  }
+
+  .header-social-link:hover {
+    background-color: #7a7171;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .header-social-svg-link {
+    fill: #36A74C;
+    width: 50%;
+  }
+
+  .header-social-svg-you {
+    fill: #fff;
+    width: 70%;
+  }
+
+  .header-social-svg-f {
+    fill: #fff;
+    width: 55%;
+  }
+
+  .header-social-svg-inst {
+    fill: #fff;
+    width: 50%;
+  }
+
+  .header-social-svg-use {
+    fill: #fff;
   }
 
   .header-button-mobile {
@@ -157,6 +204,11 @@ button {
     font-weight: 400;
     font-size: 16px;
     color: #7a7171;
+    transition: color 250ms ease-in-out;
+  }
+
+  .header-nav-item-link:hover {
+    color: #36a74c;
   }
 
   .header-nav-link-logo {
@@ -205,7 +257,8 @@ button {
 .offer-text {
   font-size: 18px;
   text-align: center;
-  max-width: 280px;
+  min-width: 280px;
+  max-width: 510px;
 }
 
 @media screen and (min-width: 768px) {
@@ -352,6 +405,13 @@ button {
   background-color: #fff;
   width: 245px;
   padding: 14.5px 45px;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out, box-shadow 250ms ease-in-out;
+}
+
+.onlineapp-form-button:hover {
+  background-color: #7a7171;
+  color: #fff;
+  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.25);
 }
 
 @media screen and (min-width: 768px) {
@@ -403,7 +463,8 @@ button {
 }
 
 .textlist-container {
-  max-width: 320px;
+  min-width: 320px;
+  max-width: 767px;
   padding: 0 20px;
 }
 
@@ -431,6 +492,8 @@ button {
   font-size: 14px;
   text-align: center;
   color: #7a7171;
+  min-width: 280px;
+  max-width: 600px;
 }
 
 .textlist-title-cover {
@@ -457,7 +520,8 @@ button {
   }
 
   .textlist-container {
-    max-width: 768px;
+    min-width: 768px;
+    max-width: 1439px;
     padding: 0 40px;
   }
 
@@ -474,9 +538,10 @@ button {
 
   .textlist-item-text {
     text-align: left;
-    width: 471px;
-    flex-shrink: 0;
+    /* width: 471px; */
     font-size: 16px;
+    min-width: 471px;
+    max-width: 767px;
   }
 
   .textlist-item-img-right {
@@ -509,7 +574,7 @@ button {
 
   .textlist-item-text {
     font-size: 24px;
-    width: 1042px;
+    max-width: 1440px;
   }
 }
 
@@ -525,7 +590,8 @@ button {
 }
 
 .ourteam-container {
-  max-width: 320px;
+  min-width: 320px;
+  max-width: 767px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -551,6 +617,8 @@ button {
   text-align: center;
   color: #7a7171;
   margin-bottom: 25px;
+  min-width: 280px;
+  max-width: 516px;
 }
 
 .ourteam-subtitle {
@@ -694,7 +762,14 @@ button {
   color: #fff;
   padding: 15px 0;
   width: 245px;
-  margin-bottom: 40px
+  margin-bottom: 40px;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out, box-shadow 250ms ease-in-out;
+}
+
+.footer-form-button:hover {
+  background-color: #7a7171;
+  color: #fff;
+  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.25);
 }
 
 .footer-second-box {
@@ -704,6 +779,7 @@ button {
   justify-content: center;
   padding: 50px 0 30px 0;
   order: 0;
+  z-index: 1;
 }
 
 .footer-title {
@@ -731,6 +807,12 @@ button {
   justify-content: center;
 
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
+  transition: background-color 250ms ease-in-out, box-shadow 250ms ease-in-out;
+}
+
+.footer-social-link:hover {
+  background-color: #7a7171;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
 .footer-social-svg-link {
@@ -753,10 +835,14 @@ button {
   width: 50%;
 }
 
+.footer-social-link:hover .footer-social-svg-use {
+  fill: #fff;
+}
 
 .footer-social-svg-use {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
   fill: #36a74c;
+  transition: fill 250ms ease-in-out;
 }
 
 .footer-social-svg-use-f {
