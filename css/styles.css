@@ -329,113 +329,16 @@ button {
 }
 
 .photo-container {
-  padding: 0 20px;
-
-  width: 278px;
-  height: 142px;
-  background-color: bisque;
-  position: relative;
+  margin: 0 auto;
+  min-width: 278px;
+  max-width: 684px;
+  /* height: 142px; */
+  overflow: scroll;
 }
 
-.photo-list {
-  display: flex;
+.photo-container-box {
+  margin: 0 20px;
 }
-
-.photo-item {
-  position: absolute;
-  border-radius: 10px;
-
-}
-
-.photo-item-img {
-  border-radius: 10px;
-}
-
-.photo-item-a {
-  width: 181px;
-  height: 220px;
-  top: 58px;
-  left: 664px;
-  z-index: 0;
-  transition: box-shadow 250ms ease-in-out, z-index 250ms ease-in-out, scale 250ms ease-in-out, top 250ms ease-in-out;
-}
-
-.photo-item-a:hover {
-  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.4);
-  z-index: 10;
-  scale: 1.25;
-  top: 30px;
-}
-
-.photo-item-b {
-  width: 184px;
-  height: 233px;
-  top: 49px;
-  left: 389px;
-  z-index: 1;
-  transition: box-shadow 250ms ease-in-out, z-index 250ms ease-in-out, scale 250ms ease-in-out, top 250ms ease-in-out;
-}
-
-.photo-item-b:hover {
-  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.4);
-  z-index: 10;
-  scale: 1.21;
-  top: 25px;
-}
-
-.photo-item-c {
-  width: 163px;
-  height: 198px;
-  top: 0px;
-  left: 241px;
-  z-index: 0;
-  transition: box-shadow 250ms ease-in-out, z-index 250ms ease-in-out, scale 250ms ease-in-out, top 250ms ease-in-out;
-}
-
-.photo-item-c:hover {
-  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.4);
-  z-index: 10;
-  scale: 1.43;
-  top: 43px;
-}
-
-.photo-item-d {
-  width: 180px;
-  height: 223px;
-  top: 0px;
-  left: 1121px;
-  z-index: 0;
-  transition: box-shadow 250ms ease-in-out, z-index 250ms ease-in-out, scale 250ms ease-in-out, top 250ms ease-in-out, left 250ms ease-in-out;
-}
-
-.photo-item-d:hover {
-  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.4);
-  z-index: 10;
-  scale: 1.26;
-  top: 29px;
-  left: 1098px;
-}
-
-.photo-item-e {}
-
-.photo-item-f {}
-
-.photo-item-g {}
-
-.photo-item-h {}
-
-.photo-item-i {}
-
-.photo-item-j {}
-
-.photo-item-k {}
-
-.photo-item-l {}
-
-.photo-item-m {}
-
-
-
 
 @media screen and (min-width: 768px) {
   .photo {
@@ -444,9 +347,9 @@ button {
 
   .photo-container {
     padding: 0 40px;
-
-    width: 685px;
-    height: 162px;
+    min-width: 685px;
+    max-width: 1300px;
+    /* height: 162px; */
   }
 }
 
@@ -457,9 +360,7 @@ button {
 
   .photo-container {
     padding: 0 70px;
-
-    width: 1301px;
-    height: 282px;
+    max-width: 1301px;
   }
 }
 
